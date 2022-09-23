@@ -22,6 +22,6 @@ fn create_vertices() -> Vec<common::Vertex> {
 
 fn main(){
     let vertex_data = create_vertices();
-    let light_data = common::light([0.0,1.0,0.0], [1.0, 1.0, 0.0], 0.1, 0.6, 0.3, 30.0);
+    let light_data = common::light([1.0,0.0,0.0], [1.0, 1.0, 0.0], 0.1, 0.6, 0.3, 30.0);
     common::run(&vertex_data, light_data, "cube");
 }
